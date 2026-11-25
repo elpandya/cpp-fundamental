@@ -1,0 +1,25 @@
+INSERTION SORT
+Cara Kerja:
+Mirip dengan mengurutkan kartu di tangan.
+
+Array dibagi menjadi dua bagian: terurut (awalnya hanya elemen pertama) dan belum terurut.
+
+Ambil elemen pertama dari bagian belum terurut dan sisipkan ke posisi yang benar di bagian terurut (dengan menggeser elemen jika diperlukan).
+
+Contoh:
+Array: [12, 11, 13, 5, 6]
+
+Pass 1:
+- Elemen pertama [12] dianggap terurut. Ambil 11 (elemen kedua) dan sisipkan di bagian terurut.
+- 11 < 12, jadi geser 12 ke kanan dan sisipkan 11 → [11,12,13,5,6]
+
+Pass 2:
+- Ambil 13, bandingkan dengan 12 (elemen terakhir bagian terurut) → 13 > 12, jadi tetap di posisi sekarang → [11,12,13,5,6]
+
+Pass 3:
+- Ambil 5, bandingkan dengan 13: 5 < 13 → geser 13 ke kanan
+  Bandingkan dengan 12: 5 < 12 → geser 12 ke kanan
+  Bandingkan dengan 11: 5 < 11 → geser 11 ke kanan
+  Sisipkan 5 di index 0 → [5,11,12,13,6]
+
+Dan seterusnya.

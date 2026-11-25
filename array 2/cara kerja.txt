@@ -1,0 +1,21 @@
+BUBBLE SORT
+Cara Kerja:
+Membandingkan dua elemen berdekatan dari awal hingga akhir.
+
+Jika urutannya salah (elemen sebelumnya lebih besar dari elemen setelahnya untuk ascending), maka ditukar.
+
+Proses ini diulang hingga tidak ada lagi pertukaran yang dilakukan (artinya array sudah terurut).
+Array: [5, 1, 4, 2, 8]
+
+Pass 1:
+- Bandingkan 5 dan 1: tukar → [1,5,4,2,8]
+- Bandingkan 5 dan 4: tukar → [1,4,5,2,8]
+- Bandingkan 5 dan 2: tukar → [1,4,2,5,8]
+- Bandingkan 5 dan 8: tidak tukar → [1,4,2,5,8]
+
+Setelah Pass 1, array belum terurut, tapi elemen terbesar (8) sudah di posisi terakhir.
+
+Pass 2:
+[1,4,2,5,8] → 1 dan 4: tidak tukar
+[1,4,2,5,8] → 4 dan 2: tukar → [1,2,4,5,8]
+... dan seterusnya sampai terurut.

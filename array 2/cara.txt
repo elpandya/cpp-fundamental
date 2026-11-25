@@ -1,0 +1,22 @@
+SELECTION SORT
+Cara Kerja:
+Membagi array menjadi dua bagian: bagian yang sudah terurut (di kiri) dan yang belum (di kanan).
+
+Pada setiap iterasi, cari elemen terkecil (untuk ascending) dari bagian yang belum terurut.
+
+Tukar elemen terkecil tersebut dengan elemen pertama dari bagian yang belum terurut.
+
+Dengan demikian, bagian yang sudah terurut bertambah satu elemen.
+
+Array: [64, 25, 12, 22, 11]
+
+Pass 1:
+- Cari elemen terkecil dari index 0 sampai 4: 11 (di index 4)
+- Tukar 64 (index 0) dengan 11 (index 4) → [11,25,12,22,64]
+
+Pass 2:
+- Cari elemen terkecil dari index 1 sampai 4: 12 (index 2)
+- Tukar 25 (index 1) dengan 12 (index 2) → [11,12,25,22,64]
+
+Dan seterusnya.
+

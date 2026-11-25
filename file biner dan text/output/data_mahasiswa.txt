@@ -1,0 +1,12 @@
+Data Mahasiswa
+==============
+Nama: Budi Santoso
+Umur: 20 tahun
+IPK: 3.75
+Jurusan: Informatika
+Data Mahasiswa
+==============
+Nama: Budi Santoso
+Umur: 20 tahun
+IPK: 3.75
+Jurusan: Informatika

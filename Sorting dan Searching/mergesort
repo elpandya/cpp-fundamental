@@ -1,0 +1,177 @@
+mergeSort(0,6)
+│
+├─ Hitung mid
+│      mid = 3
+│
+├─ Panggil mergeSort(0,3)
+│   │
+│   ├─ Hitung mid
+│   │      mid = 1
+│   │
+│   ├─ Panggil mergeSort(0,1)
+│   │   │
+│   │   ├─ Hitung mid
+│   │   │      mid = 0
+│   │   │
+│   │   ├─ Panggil mergeSort(0,0)
+│   │   │   │
+│   │   │   └─ Base case
+│   │   │      left < right → FALSE
+│   │   │      RETURN
+│   │   │
+│   │   ├─ Panggil mergeSort(1,1)
+│   │   │   │
+│   │   │   └─ Base case
+│   │   │      left < right → FALSE
+│   │   │      RETURN
+│   │   │
+│   │   └─ merge(0,0,1)
+│   │       │
+│   │       ├─ Gabungkan:
+│   │       │      [38] dan [27]
+│   │       │
+│   │       ├─ Perbandingan:
+│   │       │      38 > 27
+│   │       │
+│   │       ├─ Urutan baru:
+│   │       │      [27,38]
+│   │       │
+│   │       └─ Array sekarang:
+│   │              [27,38,43,3,9,82,10]
+│   │
+│   ├─ Panggil mergeSort(2,3)
+│   │   │
+│   │   ├─ Hitung mid
+│   │   │      mid = 2
+│   │   │
+│   │   ├─ Panggil mergeSort(2,2)
+│   │   │   │
+│   │   │   └─ Base case
+│   │   │      RETURN
+│   │   │
+│   │   ├─ Panggil mergeSort(3,3)
+│   │   │   │
+│   │   │   └─ Base case
+│   │   │      RETURN
+│   │   │
+│   │   └─ merge(2,2,3)
+│   │       │
+│   │       ├─ Gabungkan:
+│   │       │      [43] dan [3]
+│   │       │
+│   │       ├─ Perbandingan:
+│   │       │      43 > 3
+│   │       │
+│   │       ├─ Urutan baru:
+│   │       │      [3,43]
+│   │       │
+│   │       └─ Array sekarang:
+│   │              [27,38,3,43,9,82,10]
+│   │
+│   └─ merge(0,1,3)
+│       │
+│       ├─ Gabungkan:
+│       │      [27,38] dan [3,43]
+│       │
+│       ├─ Perbandingan:
+│       │      27 vs 3   → ambil 3
+│       │      27 vs 43  → ambil 27
+│       │      38 vs 43  → ambil 38
+│       │      sisa 43
+│       │
+│       ├─ Hasil:
+│       │      [3,27,38,43]
+│       │
+│       └─ Array sekarang:
+│              [3,27,38,43,9,82,10]
+│
+├─ Panggil mergeSort(4,6)
+│   │
+│   ├─ Hitung mid
+│   │      mid = 5
+│   │
+│   ├─ Panggil mergeSort(4,5)
+│   │   │
+│   │   ├─ Hitung mid
+│   │   │      mid = 4
+│   │   │
+│   │   ├─ Panggil mergeSort(4,4)
+│   │   │   │
+│   │   │   └─ Base case
+│   │   │      RETURN
+│   │   │
+│   │   ├─ Panggil mergeSort(5,5)
+│   │   │   │
+│   │   │   └─ Base case
+│   │   │      RETURN
+│   │   │
+│   │   └─ merge(4,4,5)
+│   │       │
+│   │       ├─ Gabungkan:
+│   │       │      [9] dan [82]
+│   │       │
+│   │       ├─ Perbandingan:
+│   │       │      9 < 82
+│   │       │
+│   │       ├─ Hasil:
+│   │       │      [9,82]
+│   │       │
+│   │       └─ Array sekarang:
+│   │              [3,27,38,43,9,82,10]
+│   │
+│   ├─ Panggil mergeSort(6,6)
+│   │   │
+│   │   └─ Base case
+│   │      RETURN
+│   │
+│   └─ merge(4,5,6)
+│       │
+│       ├─ Gabungkan:
+│       │      [9,82] dan [10]
+│       │
+│       ├─ Perbandingan:
+│       │      9 vs 10   → ambil 9
+│       │      82 vs 10  → ambil 10
+│       │      sisa 82
+│       │
+│       ├─ Hasil:
+│       │      [9,10,82]
+│       │
+│       └─ Array sekarang:
+│              [3,27,38,43,9,10,82]
+│
+└─ merge(0,3,6)
+    │
+    ├─ Gabungkan:
+    │      [3,27,38,43]
+    │      dan
+    │      [9,10,82]
+    │
+    ├─ Perbandingan detail:
+    │
+    │      3 vs 9
+    │      → ambil 3
+    │
+    │      27 vs 9
+    │      → ambil 9
+    │
+    │      27 vs 10
+    │      → ambil 10
+    │
+    │      27 vs 82
+    │      → ambil 27
+    │
+    │      38 vs 82
+    │      → ambil 38
+    │
+    │      43 vs 82
+    │      → ambil 43
+    │
+    │      sisa:
+    │      82
+    │
+    ├─ Hasil akhir:
+    │      [3,9,10,27,38,43,82]
+    │
+    └─ Array final:
+           [3,9,10,27,38,43,82]
